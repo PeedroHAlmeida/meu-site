@@ -26,7 +26,7 @@ body{
 }
 
 header{
-    height: 100vh;
+    height: 70vh;
     display: grid;
     grid-template-areas: 'parag1 parag1 parag1 bar_lateral';
     justify-content: center;
