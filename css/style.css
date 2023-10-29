@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a8a8a8;
+    margin: 0;
+}
+
+.texto_lateral{
+    color: white;
+}
+
+#Bar_lateral{
+    grid-area: bar_lateral;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 10vw 0 15vw;
+    padding: 0 2vw 0 2vw;
+    background-color: #363636;
+    border-radius: 10px;
+}
+
+#paragrafo_1{
+    grid-area: parag1;
+}
+
+header{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'parag1 parag1 parag1 bar_lateral';
+    justify-content: center;
+    margin-left: 7vw;
+}
+
+header p{
+    font-size: 20px;
+    margin-top: 5vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#musicas{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+nav p, #musicas p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+audio{
+    width: 80%;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main{
+    margin-right: 45vw;
+    margin-left: 7vw;
+}
+
+p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+ul, ol{
+    font-size: 20px;
+}
+
+a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #a9a9a9;
+    text-decoration: underline;
+}
+
+h1{
+    margin-top: 8vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table, tr, th, td{
+    text-align: center;
+    padding: 10px;
+    border: solid 2px white;
+    font-size: 25px;
+    border-collapse:collapse;
+    color: white;
+    background-color:#606060;
+    width: 80%;
+}
+
+th{
+    background-color: #404040;
+    color: white;
+}
+
+footer{
+    background-color: aquamarine;
+    padding: 2vh 0 2vh 7vw;
+    font-family: sans-serif;
+}
+
+#cake_icon{
+    width: 40px;
+    height: 40px;
+}
+
+video{
+    width: 80%;
+}
+
+@media only screen and (max-width: 992px){
+
+    main, header{
+        margin-right: 10vw;
+    }
+
+    #Bar_lateral{
+        display:none
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+    table, tr, th, td{
+        font-size: 15px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    iframe{
+        width: 80vw;
+        height: 30vh;
+    }
+    
+    img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+   body p{
+        font-size: 15px;
+
+    }
+
+    ul, ol{
+        font-size: 15px;
+    }
+        
+    
+
+}
